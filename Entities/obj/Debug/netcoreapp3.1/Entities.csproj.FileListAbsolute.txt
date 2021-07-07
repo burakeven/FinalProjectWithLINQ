@@ -7,3 +7,6 @@ C:\Users\burak\source\repos\MyFinalProject\Entities\obj\Debug\netcoreapp3.1\Enti
 C:\Users\burak\source\repos\MyFinalProject\Entities\obj\Debug\netcoreapp3.1\Entities.csproj.CoreCompileInputs.cache
 C:\Users\burak\source\repos\MyFinalProject\Entities\obj\Debug\netcoreapp3.1\Entities.dll
 C:\Users\burak\source\repos\MyFinalProject\Entities\obj\Debug\netcoreapp3.1\Entities.pdb
+C:\Users\burak\source\repos\MyFinalProject\Entities\bin\Debug\netcoreapp3.1\Core.dll
+C:\Users\burak\source\repos\MyFinalProject\Entities\bin\Debug\netcoreapp3.1\Core.pdb
+C:\Users\burak\source\repos\MyFinalProject\Entities\obj\Debug\netcoreapp3.1\Entities.csproj.CopyComplete
