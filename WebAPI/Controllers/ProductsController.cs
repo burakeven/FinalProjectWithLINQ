@@ -26,12 +26,37 @@ namespace WebAPI.Controllers
             //Bu olay c# ve javada vardır. Javascriptte falan const içine ulaşabilirsin.
         }
 
-        [HttpGet]
-        public List<Product> Get()
+        [HttpGet("getall")]
+        public IActionResult GetAll() //IActionResult'dan önce List döndürüyorduk
         {
-            
+            //Swagger
+            //get requestlerde 200 ile çalışırız.
             var result = _productService.GetAll();
-            return result.Data;
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result);
+        }
+        [HttpGet("getbyid")]
+        public IActionResult GetById(int id)
+        {
+            var result = _productService.GetById(id);
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result);
+        }
+        [HttpPost("add")] //silme ve güncelleme içinde HttpPost kullanılabilir. Gerçek hayat projelerinde %99 HttpPost kullanılır.
+        public IActionResult Add(Product product)
+        {
+            var result = _productService.Add(product);
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result);
         }
     }
 }
